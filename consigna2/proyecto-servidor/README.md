@@ -2,7 +2,7 @@
 
   ## Description
  
-  Un ejercicio de ecommerce usando process y child_process
+  Un ejercicio de ecommerce usando clusters y nginx
 
   
   ## Table of Contents
@@ -27,15 +27,16 @@ Instala las librerias requeridas
   
 Seguir instrucciones de instalación.
 
-Comienza el servidor
+Usa los scripts:
+    "start": "nodemon src/server.js",
+    "node-fork": "node src/server.js -p 8081",
+    "node-cluster": "node src/server.js -p 8081 -m CLUSTER",
+    "babel": "babel server.js -o index.js",
+    "pm2-fork": "pm2 start index.js -p 8081",
+    "pm2-cluster": "pm2 start index.js -i 0 -p 8081",
+    "nginx-node-cluster": "node server.js -p 8081",
+    "forever-fork": "forever start server.js -p 8082"
 
-``` nodemon server.js ```
-
-Sigue la liga
-
-http://localhost:8080/
-
-  
   ## License
   
   
