@@ -1,0 +1,82 @@
+{{#if user}}
+
+<div class="container"><h1>Bienvenido {{user.name}}</h1>
+<button class="btn btn-danger" id ="logout"> Logout </button>
+</div>
+
+
+
+{{/if}}
+
+
+<div class="container" >
+    <form id="form" >
+        <div class="form-group">   
+            <label for="nombre">Nombre del producto:</label>
+            <input type="text" class="form-control" name="title">
+        </div>
+        <div class="form-group">
+            <label for="precio"> Precio:</label>
+            <input type="text" class="form-control" name="price">
+        </div>
+        <div class="form-group">
+            <label for="precio"> Thumbnail: </label>
+            <input type="text"  class="form-control" name="thumbnail"><br><br>
+        </div>
+     
+      
+        <input class="btn btn-primary" type="submit" >
+    </form>
+</div>
+
+<div class="container">
+    <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Id</th>
+      <th scope="col">Titulo</th>
+      <th scope="col">Precio</th>
+      <th scope="col">Thumbnail</th>
+    </tr>
+  </thead>
+  <tbody id="tabla">
+
+  </tbody>
+</table>
+
+</div>
+
+<div class="container">   
+    
+    <h2>Chat</h2>
+    <div class="form-group">  
+    <label for="alias">Alias</label>
+    <input type="text" class="form-control" id="alias"/>
+     <label for="nombre">nombre</label>
+    <input type="text" class="form-control" id="nombre"/>
+     <label for="apellido">apellido</label>
+    <input type="text" class="form-control" id="apellido"/>
+     <label for="edad">edad</label>
+    <input type="number" class="form-control" id="edad"/>
+     <label for="avatar">avatar</label>
+    <input type="url" class="form-control" id="avatar"/> 
+    <label for="email">Email</label>
+    <input type="email" class="form-control" id="email"/>
+    </div>
+
+    <br>
+
+    <div class="form-group">  
+    <label for = "messageField">Message</label>
+    <input type="text" class="form-control" id="messageField"/>
+    <div id="messageContainer"></div>
+    </div>
+
+  
+</div>
+     <script src="https://cdn.jsdelivr.net/npm/normalizr@3.6.1/dist/normalizr.browser.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="index.js"></script>
+
+
+
