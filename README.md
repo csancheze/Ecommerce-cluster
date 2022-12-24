@@ -28,14 +28,14 @@ Instala las librerias requeridas
 Seguir instrucciones de instalación.
 
 Usa los scripts:
-    - "start": "nodemon src/server.js",
-    - "node-fork": "node src/server.js -p 8081",
-    - "node-cluster": "node src/server.js -p 8081 -m CLUSTER",
-    - "babel": "babel server.js -o index.js",
-    - "pm2-fork": "pm2 start index.js -p 8081",
-    -  "pm2-cluster": "pm2 start index.js -i 0 -p 8081",
-    - "nginx-node-cluster": "node server.js -p 8081",
-    - "forever-fork": "forever start server.js -p 8082"
+- "start": "nodemon src/server.js",
+- "node-fork": "node src/server.js -p 8081",
+- "node-cluster": "node src/server.js -p 8081 -m CLUSTER",
+- "babel": "babel server.js -o index.js",
+- "pm2-fork": "pm2 start index.js -p 8081",
+-  "pm2-cluster": "pm2 start index.js -i 0 -p 8081",
+- "nginx-node-cluster": "node server.js -p 8081",
+- "forever-fork": "forever start server.js -p 8082"
 
   ## License
   
